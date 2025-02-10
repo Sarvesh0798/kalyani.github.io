@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #17a2b8;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+
+.project-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+ 
+
+/* Mobile Profile Section */
+.mobile-profile {
+    background: #f8f9fa;
+}
+
+.mobile-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sidebar Adjustments */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+/* Hide Sidebar on Small Screens */
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+/* Mobile Profile Section (Default) */
+.mobile-profile {
+    margin-top: 60px; /* Moves the whole section down */
+    background: #f8f9fa;
+    text-align: center;
+    padding-top: 100px;  /* Increased to ensure space for profile image */
+    padding-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+
+/* Profile Image (Default) */
+.mobile-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Ensure it's centered */
+}
+
+/* Stick Navbar at the Top */
+/* .navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+} */
+
+/* Move Profile Photo into Navbar on Scroll */
+.scrolled .mobile-profile-img {
+    width: 40px; /* Smaller avatar inside navbar */
+    height: 40px;
+    position: fixed;
+    top: 10px;
+    left: 50%; /* Adjust based on navbar padding */
+    border: 2px solid white;
+    z-index: 1100;
+}
+
+/* Hide Empty Space Left in Profile Section */
+.scrolled .mobile-profile {
+    padding: 5px;
+    opacity: 0;
+}
+
+

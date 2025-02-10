@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Side Panel -->
+            <!-- <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+                <div class="position-sticky">
+                    <div class="text-center mt-3">
+                        <img src="images/Kalyani_kothekar.jpg" class="profile-img" alt="Profile Photo">
+                        <h4 class="text-white mt-2">Kalyani Kothekar</h4>
+                        <p class="text-secondary">Angular Developer</p>
+                        <p class="text-white">8652281204 | kalyanikothekar19@gmail.com</p>
+                    </div>
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skillset</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    </ul>
+                </div>
+            </nav> -->
+
+<!-- Mobile Navbar (Toggles Sidebar) -->
+<nav class="navbar navbar-dark bg-dark d-md-none">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Profile Section (Visible Only on Small Screens) -->
+<div class="mobile-profile d-md-none text-center py-3">
+    <img src="images/Kalyani_kothekar.jpg" class="mobile-profile-img" alt="Profile Photo">
+    <h4>Kalyani Kothekar</h4>
+    <p class="text-secondary">Angular Developer</p>
+</div>
+
+<!-- Sidebar (Hidden on Mobile, Offcanvas Instead) -->
+<nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar d-none d-md-block">
+    <div class="position-sticky">
+        <div class="text-center mt-3">
+            <img src="images/Kalyani_kothekar.jpg" class="profile-img" alt="Profile Photo">
+            <h4 class="text-white mt-2">Kalyani Kothekar</h4>
+            <p class="text-secondary">Angular Developer</p>
+            <p class="text-white">8652281204 | kalyanikothekar19@gmail.com</p>
+        </div>
+        <ul class="nav flex-column mt-3">
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skillset</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Mobile Sidebar (Offcanvas) -->
+<div class="offcanvas offcanvas-start bg-dark text-white" id="mobileSidebar">
+    <div class="offcanvas-header">
+        <button></button>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <img src="images/Kalyani_kothekar.jpg" class="profile-img" alt="Profile Photo">
+            <h5 class="offcanvas-title">Kalyani Kothekar</h5>
+            <p class="text-white">8652281204 | kalyanikothekar19@gmail.com</p>
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skillset</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#resume">Resume</a></li>
+        </ul>
+    </div>
+</div>
+
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <section id="about" class="mt-5">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a results-driven software developer specializing in full-stack web development, API integrations, and security. With expertise in Angular and Spring Boot, I have built and optimized web applications, enhancing performance and user experience. I have developed RESTful APIs for seamless client-server communication, implemented JWT-based authentication, and integrated Keycloak for secure access control. Upgrading Angular projects from v14 to v17 has improved compatibility, security, and efficiency.<br><br>
+
+                        I have designed enterprise solutions like a Backup Usage Monitoring System, reducing storage usage by 30%, and a Credit Voucher System with role-based access. My contributions to infrastructure visibility include developing firewall monitoring and IT alerts modules, improving system reliability. Additionally, optimizing Angular applications has increased performance by 25%, and building interactive dashboards has provided valuable insights for stakeholders.<br><br>
+                        
+                        Security and performance optimization are central to my approach. I have implemented HTML sanitization and XSS protection, ensuring secure data handling. Using Angular’s HttpClient and Spring Boot, I develop scalable, efficient APIs with token authentication. Constantly learning and refining my skills, I strive to create high-performance, secure, and user-friendly applications that drive real impact in the tech industry.
+                    </p>
+                </section>
+
+                <section id="projects" class="mt-5">
+                    <h2>Projects</h2>
+                    <div class="row">
+                        <!-- Project 1 -->
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/project.png" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Backup Usage Monitoring System</h5>
+                                    <p class="card-text"><strong>Platform:</strong> Angular, Spring Boot</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Project 2 -->
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/project.png" class="card-img-top" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Credit Voucher System</h5>
+                                    <p class="card-text"><strong>Platform:</strong> Angular, Keycloak</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Project 3 -->
+                        <div class="col-md-4">
+                            <div class="card project-card">
+                                <img src="images/project.png" class="card-img-top" alt="Project 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">IT Alerts Monitoring Module</h5>
+                                    <p class="card-text"><strong>Platform:</strong> Angular, Spring Boot</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section id="skills" class="mt-5">
+                    <h2>Skillset</h2>
+                    <ul class="skill-list">
+                        <li>Angular</li>
+                        <li>Spring Boot</li>
+                        <li>Debugging</li>
+                        <li>Unit Testing</li>
+                        <li>Database</li>
+                        <li>TypeScript, JavaScript, SCSS</li>
+                        <li>Keycloak, Directives, Services, Dependency Injection</li>
+                        <li>RESTful APIs, JWT Authentication</li>
+                        <li>Chrome DevTools, Network Analysis, Error Handling</li>
+                        <li>Jasmine, Karma</li>
+                        <li>MySQL, MongoDB</li>
+                    </ul>
+                </section>
+
+                <section id="education" class="mt-5">
+                    <h2>Education</h2>
+                    <br>
+                    <p>(B.TECH) PILLAI COLLEGE OF ENGG. <br> Computer Science | Mumbai University<br>Graduation, 2023</p>
+            
+                </section>
+
+                <section id="resume" class="mt-5">
+                    <h2>Resume</h2>
+                    <a href="resume/Kalyani_Kothekar_Resume_latest.pdf" class="btn btn-primary" download>Download Resume</a>
+                </section>
+                <br>
+                <br>
+                <br>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>Contact Me: 
+            <a href="https://linkedin.com/in/johndoe" target="_blank" class="text-white mx-2">LinkedIn</a> | 
+            <a href="https://github.com/johndoe" target="_blank" class="text-white mx-2">GitHub</a> | 
+            <a href="mailto:john.doe@example.com" class="text-white mx-2">Email</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
